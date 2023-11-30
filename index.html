@@ -43,16 +43,9 @@
       <section class="jumbotron container-nopadding">
         <div class="jumbotron__title">
           <h1 class="title">
-            <span class="title__text_tall title__text_left">о
-              <span class="title__gap">но</span>
-            </span>
-            <span class="title__text title__text_center">те
-              <span class="title__gap">бе</span>
-            </span>
-            <span class="title__text title__text_right">
-              <span class="title__gap">н</span>ад
-              <span class="title__nogap">о</span>
-            </span>
+            <span class="title__text_tall title__text_left">о<span class="title__gap">но</span></span>
+            <span class="title__text title__text_center">те<span class="title__gap">бе</span></span>
+            <span class="title__text title__text_right"><span class="title__gap">н</span>ад<span class="title__nogap">о</span></span>
           </h1>
         </div>
         <div class="jumbotron__subtitle-group">
@@ -63,40 +56,52 @@
         </div>
         <div class="overlay"></div>
       </section>
-
+      
       <section class="lots container">
         <h2 class="lots__title">Лоты</h2>
-        <div class="card__group">
-          <article class="card card__bg_movie">
-            <a href="#" class="card__title">Фильм режиссёра, который бросил киношколу</a>
-            <p class="card__text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
-            <div class="overlay"></div>
-          </article>
-          <article class="card card__bg_book">
-            <a href="#" class="card__title">Книга, где описан один скучный день из жизни рекламного агента</a>
-            <p class="card__text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
-            <div class="overlay"></div>
-          </article>
-          <article class="card card__bg_picture">
-            <a href="#" class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</a>
-            <p class="card__text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков…
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
-            <div class="overlay"></div>
-          </article>
-        </div>
+        <ul class="card__list">
+          <li class="card__item">
+            <a href="#">
+              <article class="card card__bg_movie">
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+          <li class="card__item">
+            <a href="#">
+              <article class="card card__bg_book">
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                  переходами на древнеанглийский. В ней одновременно рассказывается
+                  о 16 июня 1904 года и об истории литературы, начиная с античных
+                  времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+                  бы вы поставили на «Улисса» Джеймса Джойса?
+                </p>
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+          <li class="card__item">
+            <a href="#">
+              <article class="card card__bg_picture">
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+                  похожее на инфузорию-туфельку. Никаких полей, лесов, котиков…
+                  Сколько бы вы на такое поставили, если бы не знали, что это — одна
+                  из революционных работ Кандинского?
+                </p>
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+        </ul>
         <a class="lots__link" href="#">посмотреть больше</a>
       </section>
 
@@ -132,7 +137,7 @@
       <address class="contacts-footer">
         <div class="contacts__list">
           <a class="contacts__item_underlined" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="contacts__item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a class="contacts__item_underlined" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <a class="contacts__item" href="#">наб. Принсенграхт 263-265, Амстердам</a>
         </div>
       </address>
@@ -149,17 +154,23 @@
           </li>
         </ul>
       </nav>
-      <div class="social">
-        <a href="#">
-          <img class="social__item" src="./images/yt.svg" alt="Ссылка на youtube" />
-        </a>
-        <a href="#">
-          <img class="social__item" src="./images/vk.svg" alt="Ссылка на Вконтакте" />
-        </a>
-        <a href="#">
-          <img class="social__item" src="./images/pinterest.svg" alt="Ссылка на Pinterest" />
-        </a>
-      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#">
+            <img class="social__image" src="./images/yt.svg" alt="Ссылка на youtube" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <img class="social__image" src="./images/vk.svg" alt="Ссылка на Вконтакте" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <img class="social__image" src="./images/pinterest.svg" alt="Ссылка на Pinterest" />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

@@ -249,11 +249,16 @@
   border-bottom: 1px solid #000000;
 }
 
-.card__group {
+.card__list {
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   gap: 25px;
+  list-style: none;
+}
+
+.card__item, a {
+  display: flex;
 }
 
 .card {
@@ -268,6 +273,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .overlay {
@@ -365,6 +371,16 @@
 }
 
 .social__item {
+  list-style: none;
+  height: auto;
+  margin: 0;
+}
+
+.social__item, a {
+  display: block;
+}
+
+.social__image {
   width: 48px;
   height: 48px;
 }
